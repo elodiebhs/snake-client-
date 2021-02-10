@@ -5,7 +5,10 @@ const connect = function() {
     port: 50542
   });
   conn.on('connect', function(){
-   conn.write('HI, I am here');
+  console.log('HI, I am connected');
+   // this won't appear on the game screen, just to the terminal
+
+  conn.write("Name: EBB")
   });
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
