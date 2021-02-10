@@ -1,3 +1,5 @@
+//pair up with judith
+
 const net = require('net');
 const connect = function() {
   const conn = net.createConnection({ 
@@ -20,9 +22,6 @@ const connect = function() {
    });
 */
  
-
-
-
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
   return conn;
