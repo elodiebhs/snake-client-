@@ -14,7 +14,10 @@ const handleUserInput = function (key) {
     connection.write("Move: down");
   } else if (key === 'd') {
     connection.write("Move: right");
-  }};
+  } else if (key === 'q'){
+   connection.write("Say: good afternoon");  
+  }
+};
 const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
